@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars section </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Made by Abdullah Maher </h1>
+                <p>🚗</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="chat-box" id="chatBox">
+                <!-- الرسائل ستظهر هنا -->
+            </div>
+
+            <form id="messageForm" class="message-form">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="اسم المستخدم" required>
+                    <textarea id="message" name="message" placeholder="اكتب رسالتك..." required></textarea>
+                </div>
+
+                <div class="action-buttons">
+                    <button type="submit" class="send-btn">إرسال</button>
+                    <button type="button" id="imageButton" class="send-btn">إرسال صورة</button>
+                    <button type="button" id="fileButton" class="send-btn">رفع ملف</button>
+                </div>
+
+                <!-- مدخلات لإرسال الصورة والملف -->
+                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                <input type="file" id="fileInput" style="display: none;">
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
